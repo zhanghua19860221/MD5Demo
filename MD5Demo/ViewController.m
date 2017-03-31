@@ -14,21 +14,36 @@
 
 @implementation ViewController
 
+- (void)dealloc
+{
+    [outputLabel release];
+    [inputField  release];
+    [super dealloc];
+}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+    
+    inputField = [[UITextField alloc] initWithFrame:CGRectMake(50, 50, 200, 30)];
+    inputField.borderStyle = UITextBorderStyleRoundedRect;
+    [self.view addSubview:inputField];
+    
+    outputLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 150, 320, 50)];
+    outputLabel.textAlignment = UITextAlignmentCenter;
+    [self.view addSubview:outputLabel];
+    
+    UIButton *button  = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+    button.frame = CGRectMake(100, 80, 50, 50);
+    [button addTarget:self action:@selector(buttonPressed:) forControlEvents:UIControlEventTouchUpInside];
+    button.backgroundColor = [UIColor orangeColor];
+    [self.view addSubview:button];
+    
 }
-
-- (void)viewDidUnload
+- (void)buttonPressed:(UIButton *)button
 {
-    [super viewDidUnload];
-    // Release any retained subviews of the main view.
-}
-
-- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
-{
-    return (interfaceOrientation != UIInterfaceOrientationPortraitUpsideDown);
+    outputLabel.text = [MyMD5 md5:inputField.text];
+    NSLog(@"++++++%@",outputLabel.text);
 }
 
 @end

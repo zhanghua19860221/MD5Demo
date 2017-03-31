@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "MyMD5.h"
 @interface ViewController : UIViewController
-
+{
+    UITextField *inputField;
+    UILabel     *outputLabel;
+}
 @end

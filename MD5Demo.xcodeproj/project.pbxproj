@@ -15,6 +15,7 @@
 		C6CF52D715B3B9AC0056DEEA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C6CF52D615B3B9AC0056DEEA /* AppDelegate.m */; };
 		C6CF52DA15B3B9AC0056DEEA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C6CF52D915B3B9AC0056DEEA /* ViewController.m */; };
 		C6CF52DD15B3B9AC0056DEEA /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C6CF52DB15B3B9AC0056DEEA /* ViewController.xib */; };
+		C6CF52E515B3B9BB0056DEEA /* MyMD5.m in Sources */ = {isa = PBXBuildFile; fileRef = C6CF52E415B3B9BB0056DEEA /* MyMD5.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,15 +23,17 @@
 		C6CF52C615B3B9AC0056DEEA /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		C6CF52C815B3B9AC0056DEEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		C6CF52CA15B3B9AC0056DEEA /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		C6CF52CE15B3B9AC0056DEEA /* MD5Demo-Info.plist */ = {isa = PBXFileReference; path = "MD5Demo-Info.plist"; sourceTree = "<group>"; };
+		C6CF52CE15B3B9AC0056DEEA /* MD5Demo-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MD5Demo-Info.plist"; sourceTree = "<group>"; };
 		C6CF52D015B3B9AC0056DEEA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		C6CF52D215B3B9AC0056DEEA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		C6CF52D415B3B9AC0056DEEA /* MD5Demo-Prefix.pch */ = {isa = PBXFileReference; path = "MD5Demo-Prefix.pch"; sourceTree = "<group>"; };
-		C6CF52D515B3B9AC0056DEEA /* AppDelegate.h */ = {isa = PBXFileReference; path = AppDelegate.h; sourceTree = "<group>"; };
+		C6CF52D415B3B9AC0056DEEA /* MD5Demo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MD5Demo-Prefix.pch"; sourceTree = "<group>"; };
+		C6CF52D515B3B9AC0056DEEA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		C6CF52D615B3B9AC0056DEEA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		C6CF52D815B3B9AC0056DEEA /* ViewController.h */ = {isa = PBXFileReference; path = ViewController.h; sourceTree = "<group>"; };
+		C6CF52D815B3B9AC0056DEEA /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		C6CF52D915B3B9AC0056DEEA /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		C6CF52DC15B3B9AC0056DEEA /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
+		C6CF52E315B3B9BB0056DEEA /* MyMD5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyMD5.h; sourceTree = "<group>"; };
+		C6CF52E415B3B9BB0056DEEA /* MyMD5.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyMD5.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +80,8 @@
 		C6CF52CC15B3B9AC0056DEEA /* MD5Demo */ = {
 			isa = PBXGroup;
 			children = (
+				C6CF52E315B3B9BB0056DEEA /* MyMD5.h */,
+				C6CF52E415B3B9BB0056DEEA /* MyMD5.m */,
 				C6CF52D515B3B9AC0056DEEA /* AppDelegate.h */,
 				C6CF52D615B3B9AC0056DEEA /* AppDelegate.m */,
 				C6CF52D815B3B9AC0056DEEA /* ViewController.h */,
@@ -163,6 +168,7 @@
 				C6CF52D315B3B9AC0056DEEA /* main.m in Sources */,
 				C6CF52D715B3B9AC0056DEEA /* AppDelegate.m in Sources */,
 				C6CF52DA15B3B9AC0056DEEA /* ViewController.m in Sources */,
+				C6CF52E515B3B9BB0056DEEA /* MyMD5.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
